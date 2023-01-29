@@ -1,0 +1,101 @@
+button {
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(rgba(228, 103, 25, 0.795),
+            rgb(226, 168, 32));
+    color: black;
+    padding: 12px;
+}
+
+button:hover {
+    transition: 200ms;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+nav {
+    color: rgb(238, 124, 18);
+    background-attachment: fixed;
+    background-color: rgba(104, 104, 104, 0.747);
+}
+
+.loader {
+    margin: 0 auto;
+}
+
+.avatar {
+    border-radius: 70px;
+    margin-bottom: 10px;
+}
+
+#main {
+    padding: 15px 50px;
+    margin: 0 auto;
+    display: none;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+    padding: 150px 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)), url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    height: 350px;
+    margin: 20px 40px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 5px 10px rgba(14, 59, 73, 0.881);
+    background: #fff;
+    transition: all .3s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(255, 89, 0, 0.753);
+    transform: scale(1);
+    background: rgb(183, 76, 19);
+    cursor: pointer;
+}
+
+.avatar {
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details h2 {
+    position: relative;
+    font-weight: 800;
+    font-size: 25px;
+    color: #000;
+    margin: 10px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.details p {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px;
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+}
+
